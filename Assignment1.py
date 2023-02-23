@@ -4,10 +4,6 @@ from sklearn.neighbors import KNeighborsClassifier
 import matplotlib.pyplot as plt
 
 
-def euclidian_distance(x1, y1, x2, y2):
-    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** (1 / 2)
-
-
 def data_loader():
     names = ['X', "Y"]
     test_sDat = pd.read_csv('test.sDAT.csv', names=names)
